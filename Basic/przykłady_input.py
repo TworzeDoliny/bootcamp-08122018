@@ -18,3 +18,25 @@
 
 
 # ctrl  + alt + L = pep8, czyli dodaje spacje aby program był czytelny
+
+
+# Przyłady = pętla while
+
+# i = 0
+# while True:
+#     if i == 5:
+#         continue
+#     print(i)
+#     i += 1
+#     if i == 10:
+#         break
+
+
+
+#  Napisy
+
+# tekst = 'Zla pogoda'
+# x = 0
+# while x < len(tekst):
+#     print(tekst[i])
+#     x += 1
