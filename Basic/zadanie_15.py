@@ -90,4 +90,6 @@ while True:
     if liczba_krokow >= min_l_krokow_po_wyl * 2:
         skarb_x = randint(1, 10)
         skarb_y = randint(1, 10)
+        min
         print("Przekroczyłeś dopuszczalną liczbę kroków, skarb zmienił położenie ")
+
