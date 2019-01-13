@@ -26,7 +26,7 @@ def formatuj_napis_bez_znacznikow_ale_ze_zmiennymi_jako_argumenty():
     assert formatuj("Hello World", name="John") == "Hello World"
 
 
-def formatuj_napis_bez_znacznikow_ale_ze_zmiennymi_jako_argumenty():
+def test_formatuj_napis_bez_znacznikow_ale_ze_zmiennymi_jako_argumenty():
     assert formatuj("Hello World", name="John", lastname="Kowalski") == "Hello World"
 
 def test_formatuj_napis_ze_zmienna():
