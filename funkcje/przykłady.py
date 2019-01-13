@@ -33,3 +33,43 @@ def potega(podstawa, wykladnik=2):
 print(potega(4, 2))
 print(potega(4))
 print(potega(4, 3))
+
+
+
+
+def wykonaj_operacje(operacja, *args):
+    print(args)
+    print(type(args))
+    return operacja(args)
+
+print(wykonaj_operacje(min, 10, 20, 30, 40 ,50))
+print(wykonaj_operacje(sum, 10, 20, 30, 40 ,50))
+print(wykonaj_operacje(max, 10, 20, 30, 40 ,50))
+
+
+# 8888** Napisz funkcję, która przyjmie dowolną liczbę napisów
+# 1. Zwróci te napisy połączone znakiem nowej linii
+
+def napisy(*args, funkcja = None):
+    tekst = "\n".join(args)
+    if funkcja:
+        tekst = funkcja(tekst)
+
+    return tekst
+
+
+print(napisy('a', 'b', 'c', 'd'))
+
+print("-"*10)
+
+def upper(napis):
+    return napis.upper()
+
+print(napisy('a', 'b', 'c', 'd'))
+print("-"*10)
+print(napisy('a', 'b', 'c', 'd', funkcja=str.upper))
+
+
+
+
+print("ala ma kota". replace("ala", "domi"))
