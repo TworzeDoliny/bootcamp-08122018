@@ -19,7 +19,7 @@ class BasketEntry:
         return self.product.price * self.quantity
 
     def report(self):
-        return f'- {self.product.name'
+        return f'- {self.product.name}'
 
 class Basket:
 

@@ -1,6 +1,6 @@
 class Employee:
 
-    def __init__(self, firstname, lastname, hour_pay ):
+    def __init__(self, firstname, lastname, hour_pay):
         self.firstname = firstname
         self.lastname = lastname
         self.hour_pay = hour_pay
@@ -15,21 +15,12 @@ class Employee:
         else:
             self.registered_normal_hours += hours
 
-
-
     def pay_salary(self):
         worked_hours = self.registered_normal_hours * self.hour_pay + \
                        self.registered_overhours * self.hour_pay * 2
         self.registered_normal_hours = 0
         self.registered_overhours = 0
         return worked_hours
-
-
-
-
-
-
-
 
 
 # def test_employee_initialization():
