@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+
+{% block title %} Szczegóły samochodu {% endblock %}
+
+{% block content %}
+{{ block.super }}
+
+<h1>{{car.brand}}</h1>
+<h2>{{car.model}}</h2>
+<h2>Rok produkcji: {{car.production_year}}</h2>
+<h2>Typ nadwozia: {{car.body_type}}</h2>
+
+<div>
+    {% if car.image %}
+    <img src="{{car.image.url}}" alt="Merdeces">
+    {% endif %}
+</div>>
+
+<a href="/cars/">Lista...</a>
+
+{% endblock %}
